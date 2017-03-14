@@ -23,11 +23,14 @@
 -(void)initUI{
     self.view.backgroundColor = [UIColor whiteColor];
     
-    for (int i = 0; i < 7; i++) {
-        UITextField *tf = [[UITextField alloc] initWithFrame:CGRectMake((320-100)*0.5, (i+1)*80, 100,30)];
-        tf.backgroundColor = [UIColor grayColor];
+    for (int i = 0; i < 8; i++) {
+        UITextField *tf = [[UITextField alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width-130)*0.5, (i+1)*70, 130, 30)];
+        tf.borderStyle = UITextBorderStyleRoundedRect;
+        tf.placeholder = @"placeholder";
         [self.view addSubview:tf];
     }
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Push" style:UIBarButtonItemStylePlain target:self action:@selector(rightBbiClick)];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -35,9 +38,12 @@
     [KeyBoardNotiUtil sharedUtil].targetView = self.view;
 }
 
+-(void)rightBbiClick{
+    [self.navigationController pushViewController:[ViewController new] animated:YES];
+}
+
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
-    [self.navigationController pushViewController:[ViewController new] animated:YES];
 }
 
 -(void)dealloc{
