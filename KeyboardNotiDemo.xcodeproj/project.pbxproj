@@ -14,6 +14,7 @@
 		45ACC2F11E763C0600C74F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45ACC2F01E763C0600C74F7A /* Assets.xcassets */; };
 		45ACC2F41E763C0600C74F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45ACC2F21E763C0600C74F7A /* LaunchScreen.storyboard */; };
 		45ACC2FD1E763C3700C74F7A /* KeyBoardNotiUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 45ACC2FC1E763C3700C74F7A /* KeyBoardNotiUtil.m */; };
+		45C6B30B1E77ECAC0057D466 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 45C6B30A1E77ECAC0057D466 /* demo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		45ACC2F51E763C0600C74F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45ACC2FB1E763C3700C74F7A /* KeyBoardNotiUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyBoardNotiUtil.h; sourceTree = "<group>"; };
 		45ACC2FC1E763C3700C74F7A /* KeyBoardNotiUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyBoardNotiUtil.m; sourceTree = "<group>"; };
+		45C6B30A1E77ECAC0057D466 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		45ACC2E41E763C0600C74F7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				45C6B30A1E77ECAC0057D466 /* demo.gif */,
 				45ACC2E51E763C0600C74F7A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45ACC2F41E763C0600C74F7A /* LaunchScreen.storyboard in Resources */,
+				45C6B30B1E77ECAC0057D466 /* demo.gif in Resources */,
 				45ACC2F11E763C0600C74F7A /* Assets.xcassets in Resources */,
 				45ACC2EF1E763C0600C74F7A /* Main.storyboard in Resources */,
 			);
